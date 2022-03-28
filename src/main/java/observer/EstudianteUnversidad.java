@@ -6,11 +6,7 @@ public class EstudianteUnversidad implements IInversor {
 
     @Override
     public void propertyChange(PropertyChangeEvent evt) {
-        if (evt.getPropertyName() != "VALOR"){
-            return;
-        }
-        int diferencia = (int)evt.getNewValue() - (int)evt.getOldValue();
-        analisisInversion(diferencia, (int)evt.getNewValue(), (int)evt.getOldValue());
+
     }
 
     private void analisisInversion(int diferencia, int newValue, int oldValue) {
